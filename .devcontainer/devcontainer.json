@@ -1,0 +1,21 @@
+{
+  "name": "HTML, CSS, and JavaScript Devcontainer",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "formulahendry.auto-rename-tag",
+        "esbenp.prettier-vscode",
+        "ritwickdey.LiveServer"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "liveServer.settings.port": 5500
+      }
+    }
+  },
+  "forwardPorts": [5500]
+}
